@@ -1,0 +1,40 @@
+{% extends 'default.html' %}
+
+
+
+{% block title %}
+Informs
+{% endblock title %}
+
+{% block content %}
+   <h1>Публикация {{ one_object.name }}</h1>
+
+
+   <hr>
+       <table>
+           <tr>
+               <td>Id</td>
+               <td>Название</td>
+               <td>Содержание</td>
+               <td>Категория</td>
+               <td>Дата создания</td>
+           </tr>
+
+           <tr>
+               <td>{{ one_object.id }}</td>
+               <td>{{ one_object.name }}</td>
+               <td>{{ one_object.description }}</td>
+               <td>{{ one_object.category }}</td>
+               <td>{{ one_object.added_at }}</td>
+           </tr>
+       </table>
+
+    <hr>
+
+
+
+
+
+
+
+{% endblock content %}
